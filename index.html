@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Karthikeyan |Fresher| MCA Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <h1>Portfolio</h1>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <img src="profile.jpg" alt="Karthikeyan" class="profile-img"/>
+    <h2>Hello, I'm <span>Karthikeyan</span></h2>
+    <p>MCA Graduate | Web & App Developer | Problem Solver</p>
+    <a href="#contact" class="cta">Contact Me</a>
+  </section>
+
+  <main class="main-container">
+    <!-- About Section -->
+    <section id="about" class="card-section">
+      <h2>About Me</h2>
+      <p>"I am a passionate MCA graduate with a deep interest in developing modern web and mobile applications. I thrive on creating innovative and user-friendly solutions that solve real-world problems. With a strong foundation in programming, I enjoy experimenting with new technologies and frameworks to stay ahead in the ever-evolving tech landscape. My focus is on delivering high-quality, efficient code while maintaining a keen eye for detail in both design and functionality. I am always excited to learn and explore new concepts that help me build cutting-edge applications and contribute to the tech community."</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="card-section">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>SQL</span>
+        
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="card-section">
+      <h2>Projects</h2>
+      <div class="projects-container">
+        <div class="project-card">
+          <h3>Hospital Management System</h3>
+          <p>I built a hospital management system to improve my skills and solve
+            real-life problems. </p>
+        </div>
+        <div class="project-card">
+          <h3>Smoke Detector</h3>
+          <p>I made a smoke detector using IoT that sends alerts when it finds
+            smoke, showing my skills in safety and technology.</p>
+        </div>
+        <div class="project-card">
+          <h3>Voice Activated Sales Assistant for Jewelry Shop Admin</h3>
+          <p>Voice-controlled admin interface for a jewelry store using Python, SQLite3, CustomTkinter and pyttsx3.</p>
+        </div>
+        <div class="project-card">
+          <h3>Stock Management </h3>
+          <p>I demonstrate my knowledge by expressing through by creating
+            project in react native for stock management
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="card-section">
+      <h2>Certificates</h2>
+      <div class="projects-container" id="certificates-gallery">
+        <!-- Certificates will be dynamically added here -->
+      </div>
+    </section>
+
+    <!-- Contact (With Resume Upload) -->
+    <section id="contact" class="card-section">
+      <h2>Contact Me</h2>
+      <div class="contact-info">
+        <p><strong>Email:</strong> kingkarthick199@gmail.com</p>
+        <p><strong>Phone:</strong> +91 95971 41754</p>
+        <p><strong>Location:</strong>  93/84/3/1 Rajiv Nagar 4 th
+          street east, Tuticorin 628008</p>
+
+        <label for="resumeUpload" class="upload-label">Upload Resume (PDF only):</label>
+        <input type="file" id="resumeUpload" accept="application/pdf" />
+        <p id="uploadStatus"></p>
+
+        <a id="resumeDownloadLink" class="resume-btn" href="#" target="_blank" style="display:none;">
+          📄 View My Uploaded Resume
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Karthikeyan. All Rights Reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

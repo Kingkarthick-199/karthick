@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #f0f0f0;
+    background-attachment: fixed;
+    scroll-behavior: smooth;
+  }
+  
+  /* Navigation */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+  }
+  
+  nav h1 {
+    color: #00d8ff;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .nav-links li a:hover {
+    color: #00d8ff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  .profile-img {
+    width: 120px;
+    height: 160px; /* Passport size format */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    border: 3px solid #00d8ff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  }
+  
+  .hero h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .hero h2 span {
+    color: #00d8ff;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+    color: #ddd;
+    margin-bottom: 1rem;
+  }
+  
+  .cta {
+    padding: 0.7rem 1.5rem;
+    background: #00d8ff;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background 0.3s;
+    display: inline-block;
+  }
+  
+  .cta:hover {
+    background: #0099cc;
+  }
+  
+  /* Main Container */
+  .main-container {
+    padding: 3rem 2rem;
+  }
+  
+  /* Card Sections */
+  .card-section {
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card-section:hover {
+    transform: scale(1.015);
+  }
+  
+  .card-section h2 {
+    color: #00d8ff;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  /* Skills */
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skills-container span {
+    background: #00d8ff;
+    color: #000;
+    padding: 0.5rem 1.2rem;
+    border-radius: 30px;
+    font-weight: 500;
+  }
+  
+  /* Projects */
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .project-card {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 0.7rem;
+  }
+  
+  .project-card h3 {
+    color: #00d8ff;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card p {
+    font-size: 0.95rem;
+    color: #ccc;
+  }
+  
+  /* Contact Form */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  form input,
+  form textarea {
+    padding: 0.9rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+  }
+  
+  form button {
+    padding: 0.9rem;
+    background: #00d8ff;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  form button:hover {
+    background: #0099cc;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: #ccc;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(6px);
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .hero h2 {
+      font-size: 1.8rem;
+    }
+  
+    .projects-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .card-section {
+      padding: 1.5rem;
+    }
+  }
+
+  .upload-label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  
+  #resumeUpload {
+    margin: 0.5rem 0 1rem 0;
+  }
+  
+  #uploadStatus {
+    color: green;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .resume-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    background-color: #0056b3;
+  }
+
+  #certificates-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(700px, 1fr)); /* Creates responsive columns */
+    gap: 20px;
+    justify-items: center; /* Centers images in each grid cell */
+    padding: 20px;
+  }
+  
+  
+  
+  
+  
